@@ -2,7 +2,7 @@
  * Created by jian on 2017/5/31.
  */
 'use strict';
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {
     AppRegistry,
     StyleSheet,
@@ -19,7 +19,6 @@ import {
 } from 'react-native';
 import SGListView from 'react-native-sglistview';
 
-//import {CachedImage} from "react-native-img-cache";
 import NavigationBar from '../widget/NavigationBar'
 import ViewUtils from '../utils/ViewUtils'
 import Popover from "../widget/Popover";
@@ -40,7 +39,7 @@ var Dimensions = require('Dimensions');
 var dataRequest = new DataRequest()
 
 
-export default class ClinicPage extends Component {
+export default class ClinicPage extends PureComponent {
     static navigationOptions = ({ navigation }) => ({
         title: '診所',
      //   headerStyle: { backgroundColor: 'white' },

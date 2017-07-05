@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {
     StyleSheet,
     Image,
@@ -23,13 +23,12 @@ import {Fumi,} from 'react-native-textinput-effects';
 import NavigationBar from '../widget/NavigationBar'
 import GlobalStyles from '../constants/GlobalStyles'
 import MPColors from '../common/Colors'
-import Service  from '../services/Service'
 import Global from '../common/Global'
 import ViewUtils from '../utils/ViewUtils'
+import {userRegister} from '../actions/userActions';
 
-const server = new Service()
 
-export default class LoginPage extends Component {
+export default class LoginPage extends PureComponent {
 
     PropTypes: {
         nextPromise: React.PropTypes.object.isRequired,

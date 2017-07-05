@@ -18,28 +18,33 @@ export let userFromSync = (user) => {
         dispatch({type: types.kUserFromSync, user: user});
     }
 };
-/**
-export let userRegister = (mobile, password, code) => {
+
+export let userRegister = (name, email, pwd, confirmPwd) => {
     let url = urls.kUrlUserRegister;
-    let data = {
-        mobile: mobile,
-        password: password,
-        code: code
-    };
+    let param = {'name': name, 'email': email, 'password': pwd, 'password_confirmation': confirmPwd};
+
     return (dispatch) => {
         dispatch({type: types.kUserRegister});
-        Util.post(url, data,
-            (status, code, message, data, share) => {
+        Util.post(url, param,
+            (resultData) => {
                 let user = {};
-                let app_cart_cookie_id = '';
-                if (status) {
-                    user = data.user;
-                    app_cart_cookie_id = data.app_cart_cookie_id;
-                    Storage.setAppCartCookieId(app_cart_cookie_id);
+                let message = ''
+                if (resultData.status==1) {
+                    user = resultData.data;
                     Storage.setUser(user);
+                    message = resultData.result
+                } else {
+                  //  message = resultData.error
+                    if(resultData.error.email) {
+                        message = resultData.error.email[0]
+                    }
+                    if(resultData.error.password) {
+                        message = resultData.error.password[0]
+                    }
                 }
-                dispatch({type:types.kUserRegisterReceived, status:status, code:code, message:message, user:user, share:share});
-                dispatch(cartView(app_cart_cookie_id, user.access_token));
+                Toast.show(message, {position: Toast.positions.CENTER});
+                dispatch({type:types.kUserRegisterReceived, status:status, message:message, user:user});
+
             },
             (error) => {
                 dispatch({'type': types.kActionError});
@@ -55,7 +60,7 @@ export let userView = () => {
             () => {},
             () => {});
     }
-};*/
+};
 
 
 export let userLogin = (email, password) => {
@@ -81,7 +86,7 @@ export let userLogin = (email, password) => {
                 }
                 Toast.show(message, {position: Toast.positions.CENTER});
                 dispatch({type:types.kUserLoginReceived, status:resultData.status, message:message, user:user});
-              //  dispatch(cartView(app_cart_cookie_id, user.access_token));
+
             },
             (error) => {
                 Alert.alert(error.message);
@@ -96,6 +101,7 @@ export let userLogout = () => {
     return (dispatch) => {
         dispatch({'type': types.kUserLogout});
         Storage.setUser({});
+        Toast.show('已登出', {position: Toast.positions.CENTER});
         dispatch({type:types.kUserLogoutReceived, status:0, message:'已登出', user:{}});
 
 

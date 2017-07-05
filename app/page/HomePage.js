@@ -1,9 +1,5 @@
-/**
- * 首页
- * @flow
- */
 
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
 import {
     StyleSheet,
@@ -30,7 +26,7 @@ export var FLAG_TAB = {
 }
 const service = new Service()
 
-export default class HomePage extends Component {
+export default class HomePage extends PureComponent {
     constructor(props) {
         super(props);
         this.subscribers = [];

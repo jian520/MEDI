@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component, PropTypes} from 'react';
+import React, {PureComponent, PropTypes} from 'react';
 import {
     StyleSheet,
     Image,
@@ -38,7 +38,7 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
 
 
-class LoginPage extends Component {
+class LoginPage extends PureComponent {
     static navigationOptions = ({ navigation }) => ({
         title: '登入',
         //   headerStyle: { backgroundColor: 'white' },

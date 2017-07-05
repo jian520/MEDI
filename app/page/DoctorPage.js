@@ -1,7 +1,7 @@
 /**
  * Created by jian on 2017/5/31.
  */
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {
     AppRegistry,
     StyleSheet,
@@ -53,7 +53,7 @@ var cellH = cellW;
 
 
 
-export default class DoctorPage extends Component {
+export default class DoctorPage extends PureComponent {
 
     constructor(props) {
         super(props);
