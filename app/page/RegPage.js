@@ -20,7 +20,7 @@ import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import Button from 'apsl-react-native-button';
 import {Fumi,} from 'react-native-textinput-effects';
 // import Button from 'react-native-buttons';
-import NavigationBar from '../common/NavigationBar'
+import NavigationBar from '../widget/NavigationBar'
 import GlobalStyles from '../constants/GlobalStyles'
 import MPColors from '../common/Colors'
 import Service  from '../services/Service'

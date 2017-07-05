@@ -15,7 +15,7 @@ import {
     View,
     ViewPropTypes
 } from 'react-native'
-import Popover from "../common/Popover";
+import Popover from "../widget/Popover";
 import AboutPage from '../page/my/AboutPage'
 import CooperationPage from '../page/my/CooperationPage'
 

@@ -1,17 +1,15 @@
-import React, { PureComponent } from 'react';
-import { Provider } from 'react-redux';
+import React, {PureComponent} from 'react';
+import {Provider} from 'react-redux';
 import store from './store/store';
-import { Root, Tabs, Welcome}  from './MainPage';
-
-//import Root from './Root';
+import {Root, Tabs, Welcome}  from './Root';
 
 export default class App extends PureComponent {
 
-    render(){
+    render() {
 
         return (
             <Provider store={store}>
-              <Welcome />
+                <Welcome />
             </Provider>
         )
     }

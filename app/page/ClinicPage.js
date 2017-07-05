@@ -20,11 +20,11 @@ import {
 import SGListView from 'react-native-sglistview';
 
 //import {CachedImage} from "react-native-img-cache";
-import NavigationBar from '../common/NavigationBar'
+import NavigationBar from '../widget/NavigationBar'
 import ViewUtils from '../utils/ViewUtils'
-import Popover from "../common/Popover";
+import Popover from "../widget/Popover";
 import MoreMenu, {MORE_MENU} from '../common/MoreMenu'
-import DataRequest from '../expand/dao/DataRequest'
+import DataRequest from '../common/DataRequest'
 import GlobalStyles from '../constants/GlobalStyles'
 import ClinicDetailPage from './ClinicDetailPage'
 import ImageSubtitleCell from '../common/ImageSubtitleCell'

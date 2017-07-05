@@ -17,7 +17,7 @@ import {
     ScrollView,
 } from 'react-native';
 
-import NavigationBar from "../../common/NavigationBar";
+import NavigationBar from "../../widget/NavigationBar";
 import MPColors from "../../common/Colors"
 import {MORE_MENU} from "../../common/MoreMenu";
 import GlobalStyles from '../../constants/GlobalStyles'

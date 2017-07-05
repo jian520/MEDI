@@ -24,8 +24,8 @@ import {
 } from 'react-navigation';
 import SGListView from 'react-native-sglistview';
 
-import NavigationBar from '../../common/NavigationBar'
-import DataRequest from '../../expand/dao/DataRequest'
+import NavigationBar from '../../widget/NavigationBar'
+import DataRequest from '../../common/DataRequest'
 import GlobalStyles from '../../constants/GlobalStyles'
 
 import TopView from './TopView'

@@ -22,7 +22,7 @@ import {Fumi,} from 'react-native-textinput-effects';
 import Toast from 'react-native-root-toast';
 import SActivityIndicator from 'react-native-sww-activity-indicator';
 // import Button from 'react-native-buttons';
-import NavigationBar from '../common/NavigationBar'
+import NavigationBar from '../widget/NavigationBar'
 import GlobalStyles from '../constants/GlobalStyles'
 
 import MPColors from '../common/Colors'

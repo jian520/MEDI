@@ -14,7 +14,7 @@ import {
     Text,
     View,
 } from 'react-native'
-import NavigationBar from './NavigationBar'
+import NavigationBar from '../widget/NavigationBar'
 import MPColors from './Colors'
 
 

@@ -21,15 +21,15 @@ import {
     StackNavigator,
 } from 'react-navigation';
 import ScrollableTabView, {ScrollableTabBar} from 'react-native-scrollable-tab-view'
-import NavigationBar from '../common/NavigationBar'
-import DataRequest from '../expand/dao/DataRequest'
+import NavigationBar from '../widget/NavigationBar'
+import DataRequest from '../common/DataRequest'
 import GlobalStyles from '../constants/GlobalStyles'
 import DoctorDetailPage from './DoctorDetailPage'
 import DoctorCell from './DoctorCell'
 
 import ViewUtils from '../utils/ViewUtils'
 
-import Popover from "../common/Popover";
+import Popover from "../widget/Popover";
 import Dept from '../model/Dept'
 import Area from '../model/Area'
 import API from '../constants/API'

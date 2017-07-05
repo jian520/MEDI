@@ -14,7 +14,7 @@ import {
     TouchableOpacity,
     Image
 } from 'react-native';
-import NavigationBar from '../common/NavigationBar'
+import NavigationBar from '../widget/NavigationBar'
 import ViewUtils from '../utils/ViewUtils'
 import AboutCommon from '../common/AboutCommon'
 
