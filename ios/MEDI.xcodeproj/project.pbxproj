@@ -737,7 +737,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 2SE4W4LA34;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1234,8 +1234,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: bravoonlinehk@gmail.com (VQSQBC7L4B)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SzeKit Lam (MVK9JAGD97)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SzeKit Lam (MVK9JAGD97)";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 2SE4W4LA34;
@@ -1260,8 +1260,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bravoonline.idoctor;
 				PRODUCT_NAME = MEDI;
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "7e00ee0d-8293-478c-ba6c-a97ca0953e14";
+				PROVISIONING_PROFILE_SPECIFIER = "Development iDoctor";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1271,7 +1271,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SzeKit Lam (MVK9JAGD97)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SE4W4LA34;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1295,7 +1296,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bravoonline.idoctor;
 				PRODUCT_NAME = MEDI;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "7e00ee0d-8293-478c-ba6c-a97ca0953e14";
+				PROVISIONING_PROFILE_SPECIFIER = "Distribution iDoctor";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
