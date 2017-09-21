@@ -122,22 +122,15 @@ class WelcomePage extends PureComponent {
             >
                 <View style={[styles.slide, {backgroundColor: '#fa931d'}]}>
 
-
-                    <Image style={{flex: 1, width: Global.width}} source={require('../images/ads1.jpeg')}/>
-
+                    <Image style={{flex: 1, width: Global.width}} source={require('../images/a.jpg')}/>
 
                 </View>
                 <View style={[styles.slide, {backgroundColor: '#a4b602'}]}>
 
-
-                    <Image style={{flex: 1, width: Global.width}} source={require('../images/ads2.jpeg')}/>
-
-                </View>
-                <View style={[styles.slide, {backgroundColor: '#406E9F'}]}>
-
-                    <Image style={{flex: 1, width: Global.width}} source={require('../images/ads3.jpeg')}/>
+                    <Image style={{flex: 1, width: Global.width}} source={require('../images/b.jpg')}/>
 
                 </View>
+
             </AppIntro>
         );
     }
