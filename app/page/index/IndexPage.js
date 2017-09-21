@@ -211,7 +211,7 @@ export default class IndexPage extends Component {
             <View style={[GlobalStyles.listView_container, {paddingTop: 0}]}>
                 {/*{navigationBar}*/}
 
-                <SwiperImage  { ...this.props}   />
+                {/*<SwiperImage  { ...this.props}   />*/}
                 {content}
 
 

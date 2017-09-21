@@ -11,7 +11,7 @@
     "events": "^1.1.1",
     "lodash": "^4.17.4",
     "react": "16.0.0-alpha.12",
-    "react-native": "0.45.1",
+    "react-native": "0.48.3",
     "react-native-app-intro": "^1.1.5",
     "react-native-buttons": "0.0.4",
     "react-native-code-push": "^2.1.0-beta",
